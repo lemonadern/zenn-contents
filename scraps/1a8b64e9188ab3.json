@@ -1,0 +1,22 @@
+{
+  "title": "create-react-app --template typescriptをしたら起きた不具合",
+  "closed": false,
+  "archived": false,
+  "created_at": "2021-05-20",
+  "comments": [
+    {
+      "author": "lemonadern",
+      "created_at": "2021-05-20",
+      "body_markdown": "# 表題の意味\n\ncreate-react-appコマンドのtypescriptオプション\n```\n$ npx create-react-app appname --template typescript\n```\nを実行すると開発時に様々なエラーが出たので、同じ状況になった人のために記しておく。\n\n# 環境\n2021/05/21時点\n\n- Elementary OS (Ubuntu系のディストリ)\n- anyenv + nodenv\n- node : 14.17.0\n- npm : 6.14.13\n\n# 現状わかっていること\nTypeScriptオプションである`--template typescript`を外すと正常に動作します。\n\nエラーの原因と解決方法は未だにわかっていません。わかったことがあり次第このスクラップへ投稿を追加していきます。\n知見のある方はぜひコメントよろしくお願いいたします。",
+      "body_updated_at": "2021-05-21",
+      "children": [
+        {
+          "author": "lemonadern",
+          "created_at": "2021-05-21",
+          "body_markdown": "バグの可能性があります。\nhttps://github.com/facebook/create-react-app/issues/10152\n\nUbuntu使ってる人に訪れるバグっぽい？\n`2020/05/21`現在、修正されていません。",
+          "body_updated_at": "2021-05-21"
+        }
+      ]
+    }
+  ]
+}

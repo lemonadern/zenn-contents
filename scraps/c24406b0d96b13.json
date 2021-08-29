@@ -1,0 +1,20 @@
+{
+  "title": "Elementary OSにおけるショートカット集",
+  "closed": false,
+  "archived": true,
+  "created_at": "2021-05-17",
+  "comments": [
+    {
+      "author": "lemonadern",
+      "created_at": "2021-05-17",
+      "body_markdown": "# Elementary OSを使う中でのショートカットを残していく",
+      "children": [
+        {
+          "author": "lemonadern",
+          "created_at": "2021-05-17",
+          "body_markdown": "## ファイル(explorer)やターミナルのタブ操作\n|  操作  |  挙動  |  Chromeでの操作 |\n|  ---  |  ---  |  ---  |\n|alt + 1~9(数字)|左から数えたインデックスに対応したタブに切り替え|Ctrl + 数字|\n|Ctrl + Shift + T|タブ新規追加 |Ctrl + T|"
+        }
+      ]
+    }
+  ]
+}

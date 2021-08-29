@@ -1,0 +1,36 @@
+{
+  "title": "各言語の DeepCopy への態度",
+  "closed": false,
+  "archived": false,
+  "created_at": "2021-08-20",
+  "comments": [
+    {
+      "author": "lemonadern",
+      "created_at": "2021-08-20",
+      "body_markdown": "Deep Copy と Shallow Copy らへんの各言語の雰囲気",
+      "children": [
+        {
+          "author": "lemonadern",
+          "created_at": "2021-08-20",
+          "body_markdown": "# JavaScript\n- 用意されていない\n- スプレッド構文は Shallow copy になる\n- 簡潔にメゾッドとして使おうとすると、`lodash`などのモジュールが必要"
+        },
+        {
+          "author": "lemonadern",
+          "created_at": "2021-08-20",
+          "body_markdown": "# Python\n- copyパッケージをimportすれば`copy.deepcopy(x)`で使える\n- `object.copy()`はShallow copyになる"
+        },
+        {
+          "author": "lemonadern",
+          "created_at": "2021-08-20",
+          "body_markdown": "# Ruby\n- 用意されていない\n- `dup`や`clone`はShallow copyになる\n- `active support`をrequireすれば`deep_dup`メゾッドで利用できる"
+        },
+        {
+          "author": "lemonadern",
+          "created_at": "2021-08-20",
+          "body_markdown": "# Nim\n- 代入でDeep copyになる\n※参照を用いたい場合は明示する",
+          "body_updated_at": "2021-08-20"
+        }
+      ]
+    }
+  ]
+}

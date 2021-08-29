@@ -1,0 +1,20 @@
+{
+  "title": "React-Railsの仕組みを知りたい",
+  "closed": false,
+  "archived": false,
+  "created_at": "2021-07-12",
+  "comments": [
+    {
+      "author": "lemonadern",
+      "created_at": "2021-07-12",
+      "body_markdown": "- react-railsというgemが公開されているので、これを使うのが良い\n- react-railsがやっていることは主に次の通り\n  - asset-pipelineの中で.js.jsxを変換してくれる\n  - Viewの中で、react_componentヘルパーを用いて、Reactのコンポーネントをレンダリングしてくれる\n- prerender: trueオプションを付ければ、サーバーサイドレンダリングも実行可能(1-2参照)\nこの場合、Railsのasset_pipelineを用いて、ReactのJS(JSX)ファイルも一緒にコンパイルされる\n\nhttps://qiita.com/jwako/items/195e2e85793716fb1d53#1rails%E3%81%AEview%E3%81%AE%E4%B8%AD%E3%81%ABreact%E3%82%92%E5%9F%8B%E3%82%81%E8%BE%BC%E3%82%80%E6%96%B9%E6%B3%95",
+      "children": [
+        {
+          "author": "lemonadern",
+          "created_at": "2021-07-12",
+          "body_markdown": "Railsの場合はreact-railsを使うのがオススメです。react-railsにはサーバーサイドレンダリングなどの興味深い機能もありますが、今回はview helperとreact_ujsを使った自動マウントの機能を紹介します。\n\n先程の例はreact-railsを使うと次のように書くことができます。\n\n```html\n<h1><%= @entry.title %></h1>\n<%= @entry.body %>\n\n<%= react_component('LikeComponent') %>\n<%= react_component('CommentComponent') %>\n```\n\nJavaScript側ではreact_ujsを読み込んでおき、コンポーネントをグローバルから参照できるようにしておくだけで自動的にコンポーネントがマウントされます。\n\nまた、引数でpropsを渡すこともできます。\n```html\n<%= react_component('LikeComponent', liked: @current_user.liked?(@entry), likeCount: @entry.likes.count) %>\n```\nこのようにすることでLikeComponentに初期値をpropsとして渡すことができ、Ajaxで通信せずとも初期描画を行うことができます。"
+        }
+      ]
+    }
+  ]
+}
