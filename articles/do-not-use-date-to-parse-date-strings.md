@@ -3,7 +3,7 @@ title: "new Date() で日付文字列のパースをするのを避けよう"
 emoji: "😢"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: [JavaScript, Date]
-published: false
+published: true
 ---
 
 # TL;DR
