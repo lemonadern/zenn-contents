@@ -77,7 +77,6 @@ yarn add -D @tsconfig/strictest
 }
 ```
 
-要らない設定を消す
 `tsconfig/bases` と重複していて必要ない設定項目を削除しておく
 ```diff json:tsconfig.json
 {
@@ -110,7 +109,7 @@ yarn add -D @tsconfig/strictest
 
 ## ESLint の設定
 静的解析およびリントには ESLint を利用する
-v11 からの Next.js には、デフォルトで ESLint が用意されているが、それは一旦削除しておく
+v11 からの Next.js にはデフォルトで ESLint が用意されているので設定ファイルがあるが、それは一旦削除する
 ```sh
 rm .eslintrc.json   
 ```
