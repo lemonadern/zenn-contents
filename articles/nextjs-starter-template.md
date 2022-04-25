@@ -14,10 +14,13 @@ https://zenn.dev/lemonadern/scraps/27f37a37cce2c4
 # 目指すもの
 アプリを書くとき、すぐに快適に利用できる Next.js のテンプレート
 - できる限り堅い型チェックができる設定がなされている
+  - `tsconfig` の設定
 - リンター・フォーマッタやその他の設定でコーディングスタイルを統一できる最低限の設定がなされている
+  - ESLint, Prettier, EditorConfig など
 - コミット時に自動でリンター・フォーマッタが実行される
+  - husky, lint-staged
 - VSCode を使っていれば、ほぼ設定無しで便利な機能の恩恵を受けられる
-
+  - 自動フォーマットや拡張機能の設定
 # 作業
 ## プロジェクト作成
 プロジェクトを作成する
@@ -195,6 +198,39 @@ module.exports = {
 };
 ```
 
+その他、あると良さそうな設定も追加しておく
+```diff js: eslintrc.js
+module.exports = {
+  'env': {
+    'browser': true,
+    'es2021': true,
+  },
+  extends: [
++   'eslint:recommended',
++   'plugin:@typescript-eslint/eslint-recommended',
++   'plugin:@typescript-eslint/recommended',
+    'plugin:react/recommended',
+    'next/core-web-vitals',
+    'google',
+    'prettier',
+  ],
+  'parser': '@typescript-eslint/parser',
+  'parserOptions': {
+    'ecmaFeatures': {
+      'jsx': true,
+    },
+    'ecmaVersion': 'latest',
+    'sourceType': 'module',
+  },
+  'plugins': [
+    'react',
+    '@typescript-eslint',
+  ],
+  'rules': {
+  },
+}
+```
+
 ## ESLint の設定 (2)
 ESLint のプラグインを使って、 import 関連がいい感じになるように設定する
 [eslint-plugin-import](https://github.com/import-js/eslint-plugin-import)をインストールする
@@ -290,12 +326,13 @@ VSCode でファイルを保存したときに自動でフォーマットされ�
 ```json:.vscode/extensions.json
 {
   "recommendations": [
-    "dbaeumer.vscode-eslint", // ESLint
-    "esbenp.prettier-vscode"  // Prettier
+    "dbaeumer.vscode-eslint", 
+    "esbenp.prettier-vscode"  
   ]
 }
-
 ``` 
+
+ここでは、`ESLint` と `Prettier` の拡張機能を指定している。
 ::: details 追加のやりかた
 1. VSCode で入れておいてほしい拡張機能を開き、`Cmd Shift P`でコマンドパレットを開く
 1. `Extensions: Add Extension to Workspace Folder Recommendations` を選択する
@@ -341,7 +378,7 @@ charset = utf-8
 indent_style = space
 indent_size = 2
 ```
-VSCode ユーザのために、拡張機能を追加しておく
+VSCode ユーザのために、EditorConfig の拡張機能を追加しておく
 ```diff json:.vscode/extensions.json
 {
   "recommendations": [
@@ -353,5 +390,6 @@ VSCode ユーザのために、拡張機能を追加しておく
 ```
 ---
 
-以上です！！！ よければお試しください！
+以上です！！！ 作成したリポジトリは Public Template なのでそのまま使えます。
+よければお試しください！
 https://github.com/lemonadern/template-nextjs-typescript
