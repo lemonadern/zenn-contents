@@ -3,7 +3,7 @@ title: "Next.js + TypeScript (+ ESLint + Prettier + husky + EditorConfig)の環�
 emoji: "🙌"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["nextjs","typescript","eslint","prettier","husky"]
-published: false
+published: true
 ---
 
 先日、自分用に Next.js のテンプレートリポジトリを作成しました。
