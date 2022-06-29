@@ -11,6 +11,6 @@
   "license": "ISC",
   "dependencies": {
     "npm": "^7.21.1",
-    "zenn-cli": "^0.1.110"
+    "zenn-cli": "^0.1.114"
   }
 }
