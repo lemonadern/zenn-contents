@@ -3,7 +3,7 @@ title: "Next.js で型安全に CSS Modules を使う"
 emoji: "💻"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["css", "cssmodules", "typescript"]
-published: true
+published: false
 ---
 
 # 動機
