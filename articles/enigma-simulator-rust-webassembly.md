@@ -3,7 +3,7 @@ title: "世界大戦時の暗号機 Enigma を Rust で実装し、WebAssembly �
 emoji: "🦁"
 type: "idea" # tech: 技術記事 / idea: アイデア
 topics: [rust, webassembly, enigma]
-published: false
+published: true
 ---
 
 Rust に入門したので、大戦時にドイツが利用していた暗号機エニグマを実装してみました。
