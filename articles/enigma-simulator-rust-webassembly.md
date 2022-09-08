@@ -16,8 +16,13 @@ Rust に入門したので、大戦時にドイツが利用していた暗号機
 # 作ったもの
 https://lemonadern.github.io/enigma-playground/
 
-エニグマは、暗号化と復号を同じ手順で行うことができるという特徴があります。
-鍵（エニグマの設定）が同じなら、暗号化時と復号時どちらの場合でも、使い方は `Input に入力 ⇨ Encrypt ボタンを押す`だけです。
+エニグマによる暗号化・復号がブラウザ上で体験できます。
+
+:::details 使い方
+エニグマでは、暗号化と復号を同じ方法で行います。手順は `Input に入力 ⇨ Encrypt ボタンを押す` だけです。
+
+下部にある 「Rotor Settings」, 「PlugBoard Settings」 が暗号化の鍵になっています。暗号化されたメッセージと暗号化時の鍵があれば、復号が可能になります。
+:::
 
 エニグマのコードは[こちら](https://github.com/lemonadern/enigma-core/tree/master)
 
