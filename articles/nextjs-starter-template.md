@@ -7,6 +7,11 @@ published: true
 ---
 
 先日、自分用に Next.js のテンプレートリポジトリを作成しました。
+
+:::message alert
+(2022-10-21) 以下のリポジトリはメンテナンスされた状態にありません。
+:::
+
 https://github.com/lemonadern/template-nextjs-typescript
 このときの作業メモをスクラップに残していたので、それを記事としてまとめておきます。
 https://zenn.dev/lemonadern/scraps/27f37a37cce2c4
