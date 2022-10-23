@@ -3,7 +3,7 @@ title: "プロトタイピングツールとしての RedwoodJS"
 emoji: "🪵"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["redwoodjs", "react", "graphql", "prisma", "prototyping"]
-published: false
+published: true
 ---
 
 本稿は、Webアプリのプロトタイプを作るための道具として RedwoodJS を紹介する記事です。
