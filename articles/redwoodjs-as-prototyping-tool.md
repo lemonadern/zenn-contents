@@ -44,7 +44,7 @@ RedwoodJS は、 TypeScript / JavaScript 製の Web フルスタックフレー�
 
 # 便利なところ
 
-## Zero Config の時点でめちゃくちゃリッチ
+## デフォルト設定が手厚い
 
 最初にプロジェクトを生成した時点で、ESLint, EditorConfig, VSCode の設定ファイルまでもが追加されます。VSCodeユーザなら何も設定せずとも `Format on Save` が動きますし、さらにはデフォルトの時点で Storybook も Jest も使えます。
 設定が何やらとごちゃごちゃ言っていた筆者を一撃で黙らせてくれました。
@@ -60,7 +60,7 @@ Redwood の開発で利用するほとんどの単位に `generate` コマンド
 
 最も単純なCRUDの動作を作るだけなら、Prisma でデータベースのスキーマを書いて `scaffold` コマンドを叩くだけでフロントエンドまで全部が勝手に生成されます。[チュートリアル](https://redwoodjs.com/docs/tutorial/chapter2/getting-dynamic)でこれを見たときはさすがに驚きました。
 
-## Form が楽
+## Form の実装が楽
 
 フォーム関連の機能として、[React Hook Form](https://github.com/react-hook-form/react-hook-form) をラップしたコンポーネントやフックがすでに用意されています。Redwood 用に（少しだけ）カスタマイズされていたりしますが、十分にその恩恵を受けて記述できます。
 
@@ -255,16 +255,18 @@ React を普段書いていて GraphQL, Prisma を知っている開発者であ
 
 Redwood はまだまだ日本語の記事も少ないフレームワークなので、この記事をきっかけに興味を持って利用してくれる人が増えることを願っています。
 
-# RedwoodJS に入門するには
+# 関連情報
+
+## RedwoodJS に入門するには
 この記事を読んで RedwoodJS に入門したくなった方は、ぜひ公式の[チュートリアル](https://redwoodjs.com/docs/tutorial/foreword)をやってみてください。とてもわかりやすく学べます。
 
 
-# RedwoodJS の日本語記事
+## RedwoodJS の日本語記事
 https://zenn.dev/mugi/articles/334f9556095a07
 
 https://zenn.dev/rinda_1994/articles/9d4af758ea4980
 
-[^1]: 筆者はフロントエンドを書いている人だから、という理由もあります。
+[^1]: 筆者はフロントエンドを書いている人だから、という理由もあります
 [^2]: すべて揃ったスターターを自分で作れ？全くそのとおりですね…
 [^3]: https://redwoodjs.com/docs/cli-commands#generate-alias-g
-[^4]: 何なら [こんな](https://speakerdeck.com/naoya/typescript-niyoru-graphql-batukuendokai-fa) スタイルの開発もある程度は真似できます。
+[^4]: 何なら [こんな](https://speakerdeck.com/naoya/typescript-niyoru-graphql-batukuendokai-fa) スタイルの開発もある程度は真似できます
