@@ -2,7 +2,7 @@
 title: "プロトタイピングツールとしての RedwoodJS"
 emoji: "🪵"
 type: "tech" # tech: 技術記事 / idea: アイデア
-topics: ["redwoodjs", "react", "typescript", "graphql", "prisma", "prototyping"]
+topics: ["redwoodjs", "react", "typescript", "graphql", "prisma"]
 published: true
 ---
 
