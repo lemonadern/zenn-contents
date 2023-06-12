@@ -1,5 +1,5 @@
 ---
-title: "Next.js 12 + TypeScript (+ ESLint + Prettier + husky + EditorConfig)の環境構築"
+title: "Next.js + TypeScript (+ ESLint + Prettier + husky + EditorConfig)の環境構築"
 emoji: "🙌"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["nextjs", "typescript", "eslint", "prettier", "husky"]
