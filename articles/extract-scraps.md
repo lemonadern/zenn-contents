@@ -3,7 +3,7 @@ title: "特定の条件を満たす（Scrapboxの）スクラップを抽出し�
 emoji: "🔖"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: [scrapbox, rust]
-published: false
+published: true
 ---
 
 やってみた系の記事です。
